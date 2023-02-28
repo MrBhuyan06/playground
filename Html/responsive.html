@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive image</title>
+  </head>
+  <body>
+    <!-- Dpr example -->
+    <!-- <img
+      width="100%"
+      srcset="
+        ./images/china-1x.jpg 1x,
+        ./images/china-2x.jpg 2x,
+        ./images/china.jpg    3x
+      "
+      src="./images/china.jpg"
+      alt="china image is not found"
+    /> -->
+    <!-- Crop Image  -->
+    <img
+      width="100%"
+      srcset="
+        ./images/china.jpg        1000w,
+        ./images/china-tablet.jpg  800w,
+        ./images/china-mobile.jpg  500w
+      "
+      sizes="(max-width:500px) 500px,
+      (max-width:800px) 800px,
+      1000px"
+      src="./images/china.jpg"
+      alt="china image is not found"
+    />
+  </body>
+</html>

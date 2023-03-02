@@ -8,44 +8,61 @@
   </head>
   <body>
     <h1>This is the demo of forms</h1>
-    <form action="">
+    <form
+      action="mailto:abhishekbhuyan@gmail.com"
+      method="post"
+      enctype="text/plain"
+    >
       <label for="fname">First Name</label>
-      <input type="text" name="" id="fname" />
+      <input type="text" name="first name" id="fname" />
       <label for="lname">Last</label>
-      <input type="text" name="" id="lname" />
+      <input type="text" name="last name" id="lname" />
       <br />
       <br />
       <label for="age">Age</label>
-      <input type="number" name="" id="age" />
+      <input type="number" name="age" id="age" />
       <br />
       <br />
       <label for="phone">Phone Number</label>
-      <input type="tel" name="" id="phone" />
+      <input type="tel" name="phone" id="phone" />
       <br />
       <br />
 
       <label for="email">Email</label>
-      <input type="email" name="" id="email" />
+      <input type="email" name="email" id="email" />
 
       <label for="pass">Password</label>
-      <input type="password" id="pass" />
+      <input type="password" id="pass" name="pass" />
 
       <p>Enter your T-shirt Size</p>
-      <input type="radio" name="tshirtsize" id="small" />
+      <input type="radio" name="tshirtsize" value="small" id="small" />
       <label for="small">small</label>
       <br />
-      <input type="radio" name="tshirtsize" id="meduim" />
+      <input type="radio" name="tshirtsize" value="medium" id="meduim" />
       <label for="meduim">medium</label>
       <br />
-      <input type="radio" name="tshirtsize" id="Large" />
+      <input type="radio" name="tshirtsize" value="large" id="Large" />
       <label for="Large">Large</label>
       <br />
       <label for="color">Your Fav Color</label>
-      <input type="color" name="" id="color" />
+      <input type="color" name="color" id="color" />
       <br />
       <br />
       <label for="dob">Date Of Birth</label>
-      <input type="date" name="" id="dob" />
+      <input type="date" name="dob" id="dob" />
+      <br />
+      <br />
+      <label for="qualification">Which Degree u Have</label>
+      <select name="qualification" id="qualification">
+        <option value="MCA">MCA</option>
+        <option selected value="BCA">BCA</option>
+        <option value="BSC">BSC</option>
+      </select>
+      <br />
+      <label for="aboutself">Tell me about self</label>
+      <textarea name="aboutself" id="aboutself" cols="30" rows="10"></textarea>
+      <input type="reset" value="Reset" />
+      <input type="submit" value="submit" />
     </form>
   </body>
 </html>
